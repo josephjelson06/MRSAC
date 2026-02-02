@@ -1,0 +1,293 @@
+/* MRSAC Farm Boundary Detection - Shared Styles */
+
+/* ========== Base Styles ========== */
+body {
+  background: linear-gradient(to bottom, #000428, #004e92);
+  color: #e0e0e0;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+body.light-bg {
+  background-color: #d3d3d3;
+  color: #333;
+}
+
+body.detection-page {
+  background-color: #f0f0f0;
+  background: url("https://skyfi.com/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Ftxzhex5a1q7n%2F2lGMx0erNHas1HyoDtZEsh%2F9b19d69838043fbba80609acbcd8a633%2Fwhat-is-skyfi.jpg&w=3840&q=75")
+    no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  position: relative;
+}
+
+/* ========== Navbar ========== */
+.navbar {
+  background-color: #003366;
+  position: sticky;
+  top: 0;
+  z-index: 1020;
+  padding: 0.5rem 1rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-brand img {
+  height: 60px;
+  margin-right: 15px;
+}
+
+.navbar-nav {
+  margin-left: auto;
+}
+
+.nav-link {
+  font-size: 1.1rem;
+  color: #f0f0f0;
+  font-weight: bold;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.nav-link:hover {
+  background-color: #00509e;
+  color: #ffffff;
+  border-radius: 5px;
+}
+
+.nav-item .nav-link.active {
+  background-color: #00509e !important;
+  color: #ffffff !important;
+  border-radius: 5px;
+}
+
+/* ========== Dropdown Menu ========== */
+.dropdown-menu {
+  background-color: #002a5c;
+  border: none;
+}
+
+.dropdown-item {
+  font-weight: bold;
+  color: #ffffff !important;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+  background-color: #00509e;
+  color: #ffffff !important;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.navbar .dropdown-toggle::after {
+  display: none !important;
+}
+
+/* ========== Typography ========== */
+h1 {
+  color: #f8c202;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+  color: #007bff;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+h5,
+h6 {
+  color: #d9e2ec;
+  text-align: justify;
+  line-height: 1.8;
+  margin-top: 40px;
+}
+
+/* ========== Content ========== */
+.content {
+  padding: 50px;
+}
+
+.container {
+  text-align: justify;
+  padding: 0 20px;
+}
+
+.para {
+  text-align: justify;
+}
+
+/* ========== Image Carousel ========== */
+.image-border {
+  border: 5px solid #004e92;
+  border-radius: 10px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #00509e;
+  border-radius: 50%;
+}
+
+.carousel-item img {
+  filter: brightness(0.9);
+}
+
+/* ========== Footer ========== */
+footer {
+  background-color: #002a5c;
+  color: #d9e2ec;
+  text-align: center;
+  padding: 20px 10px;
+  font-size: 1rem;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-item {
+  margin: 10px 20px;
+  text-align: left;
+}
+
+.footer-item h6 {
+  color: #f8c202;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.footer-item p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.footer-item i {
+  margin-right: 8px;
+  color: #f8c202;
+}
+
+.foot {
+  height: 400px;
+}
+
+/* ========== Detection Page Sidebar ========== */
+.sidebar {
+  width: 350px;
+  background: #002a5c;
+  padding: 50px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  box-shadow: 4px 0 12px rgba(0, 0, 0, 0.3);
+  position: relative;
+  color: white;
+}
+
+.sidebar h2 {
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.sidebar img {
+  width: 150px;
+  margin: 20px 0;
+}
+
+.description {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: bold;
+  color: white;
+}
+
+/* ========== Forms ========== */
+.form-group {
+  width: 60%;
+  margin-bottom: 15px;
+}
+
+.form-control {
+  text-align: center;
+}
+
+.btn-upload {
+  background-color: #f8c202;
+  color: #002a5c;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.btn-upload:hover {
+  background-color: #d9a400;
+  color: white;
+}
+
+/* ========== Detection Content ========== */
+.content::before {
+  content: "";
+  background: url("https://upload.wikimedia.org/wikipedia/commons/3/3d/Hurricane_Florence_GOES-16_September_2018_animated.gif")
+    no-repeat center center;
+  background-size: cover;
+  opacity: 0.15;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.watermark-text {
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  font-size: 12px;
+  color: white;
+  font-style: italic;
+  opacity: 0.7;
+}
+
+label {
+  color: #ffffff;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* ========== Loading Spinner ========== */
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid #f8c202;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

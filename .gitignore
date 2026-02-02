@@ -1,0 +1,46 @@
+# Virtual environments
+.venv/
+mrsac/
+venv/
+env/
+__pycache__/
+*.pyc
+*.pyo
+
+# Training outputs
+runs/
+
+# Models
+Models
+
+# Model weights (large files - track with Git LFS if needed)
+*.pt
+*.h5
+*.pth
+*.onnx
+
+# Environment variables
+.env
+.env.local
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+*.lnk
+
+# Archives
+*.zip
+
+# Temporary files
+*.tmp
+*.temp

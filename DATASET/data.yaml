@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 4
+names: ['DryFarms', 'EmptyFarms', 'Farms', 'water']
+
+roboflow:
+  workspace: agriculture-0pfwh
+  project: farm-detection-cj7lc
+  version: 9
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/agriculture-0pfwh/farm-detection-cj7lc/dataset/9

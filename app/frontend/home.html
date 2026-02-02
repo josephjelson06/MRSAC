@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Detection - Automated Farm Boundary</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body class="detection-page">
+  <aside class="sidebar">
+    <h2>Digital Object Detection from High-Resolution Satellite Data</h2>
+    <img src="Image/MRSAC_Logo.png" alt="MRSAC Logo" />
+    <p class="description">Automated Farm Boundary Detection.</p>
+  </aside>
+
+  <main class="content">
+    <div class="form-group">
+      <label for="placeName">Enter Place Name</label>
+      <input type="text" class="form-control" id="placeName" placeholder="Enter Place Name" />
+    </div>
+    <div class="form-group">
+      <label for="coordinates">Enter Coordinates</label>
+      <input type="text" class="form-control" id="coordinates" placeholder="Enter Coordinates" />
+    </div>
+    <div class="form-group">
+      <label for="imageUpload">Upload Farm Image</label>
+      <input type="file" class="form-control" id="imageUpload" />
+    </div>
+    <button class="btn btn-upload" onclick="uploadImage()">Upload & Detect</button>
+    <p class="watermark-text">
+      This system utilizes deep learning to detect and analyze farm boundaries
+      from satellite imagery.
+    </p>
+  </main>
+
+  <script src="./script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
