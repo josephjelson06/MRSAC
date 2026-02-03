@@ -6,33 +6,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Detection - Automated Farm Boundary</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 
 <body class="detection-page">
   <aside class="sidebar">
-    <h2>Digital Object Detection from High-Resolution Satellite Data</h2>
+    <h2><i class="bi bi-radar me-2"></i>Digital Object Detection from High-Resolution Satellite Data</h2>
     <img src="Image/MRSAC_Logo.png" alt="MRSAC Logo" />
-    <p class="description">Automated Farm Boundary Detection.</p>
+    <p class="description"><i class="bi bi-stars me-2"></i>Automated Farm Boundary Detection.</p>
   </aside>
 
   <main class="content">
     <div class="form-group">
-      <label for="placeName">Enter Place Name</label>
+      <label for="placeName"><i class="bi bi-geo-alt-fill me-2"></i>Enter Place Name</label>
       <input type="text" class="form-control" id="placeName" placeholder="Enter Place Name" />
     </div>
     <div class="form-group">
-      <label for="coordinates">Enter Coordinates</label>
+      <label for="coordinates"><i class="bi bi-pin-map-fill me-2"></i>Enter Coordinates</label>
       <input type="text" class="form-control" id="coordinates" placeholder="Enter Coordinates" />
     </div>
     <div class="form-group">
-      <label for="imageUpload">Upload Farm Image</label>
-      <input type="file" class="form-control" id="imageUpload" />
+      <label for="imageUpload"><i class="bi bi-cloud-upload-fill me-2"></i>Upload Farm Image</label>
+      <input type="file" class="form-control" id="imageUpload" accept="image/*" />
     </div>
-    <button class="btn btn-upload" onclick="uploadImage()">Upload & Detect</button>
+    <button class="btn btn-upload" onclick="uploadImage()">
+      <i class="bi bi-upload me-2"></i>Upload & Detect
+    </button>
     <p class="watermark-text">
-      This system utilizes deep learning to detect and analyze farm boundaries
-      from satellite imagery.
+      <i class="bi bi-cpu-fill me-2"></i>This system utilizes deep learning to detect and analyze farm boundaries
+      from satellite imagery
     </p>
   </main>
 

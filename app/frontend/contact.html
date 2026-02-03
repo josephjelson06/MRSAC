@@ -6,17 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact Us - Automated Farm Boundary Detection</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" />
   <link rel="stylesheet" href="css/styles.css" />
-  <style>
-    /* Page-specific styles for contact boxes */
-    .contact-box {
-      background: white;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
-      margin-bottom: 20px;
-    }
-  </style>
 </head>
 
 <body class="light-bg">
@@ -32,22 +23,25 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
+              <a class="nav-link" href="index.html"><i class="bi bi-house-door-fill me-2"></i>Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="home.html"><i class="bi bi-search me-2"></i>Detection</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown"
                 aria-expanded="false">
-                About Us
+                <i class="bi bi-info-circle me-2"></i>About Us
               </a>
               <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
                 <li>
-                  <a class="dropdown-item" href="history.html">History</a>
+                  <a class="dropdown-item" href="history.html"><i class="bi bi-clock-history me-2"></i>History</a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="vision.html">Vision & Mission</a>
+                  <a class="dropdown-item" href="vision.html"><i class="bi bi-eye me-2"></i>Vision & Mission</a>
                 </li>
                 <li>
-                  <a class="dropdown-item active" href="contact.html">Contact Us</a>
+                  <a class="dropdown-item active" href="contact.html"><i class="bi bi-envelope me-2"></i>Contact Us</a>
                 </li>
               </ul>
             </li>
@@ -58,45 +52,46 @@
   </header>
 
   <main class="content">
-    <section class="row">
+    <h2 class="text-center mb-4"><i class="bi bi-envelope-at me-2"></i>Contact Us</h2>
+    <section class="row g-4">
       <div class="col-md-4">
         <div class="contact-box">
-          <h3>📍 Nagpur Branch</h3>
+          <h3><i class="bi bi-geo-alt-fill me-2"></i>Nagpur Branch</h3>
           <p>
             <strong>Maharashtra Remote Sensing Application Centre</strong><br />
             (Autonomous Body of Planning Department, Govt. of Maharashtra)<br />
             VNIT Campus, S.A. Road, Nagpur – 440 010
           </p>
           <p>
-            <strong>Tel:</strong> 0712-2220086 / 2238576<br />
-            <strong>Fax:</strong> 0712-2225893<br />
-            <strong>Email:</strong> info-nagpur@mrsac.gov.in
+            <strong><i class="bi bi-telephone-fill me-2"></i>Tel:</strong> 0712-2220086 / 2238576<br />
+            <strong><i class="bi bi-printer-fill me-2"></i>Fax:</strong> 0712-2225893<br />
+            <strong><i class="bi bi-envelope-fill me-2"></i>Email:</strong> info-nagpur@mrsac.gov.in
           </p>
         </div>
       </div>
       <div class="col-md-4">
         <div class="contact-box">
-          <h3>📍 Mumbai Branch</h3>
+          <h3><i class="bi bi-geo-alt-fill me-2"></i>Mumbai Branch</h3>
           <p>
             8th Floor, G.T. Hospital Complex,<br />
             Lokmanya Tilak Marg, Mumbai – 400 001
           </p>
           <p>
-            <strong>Tel:</strong> 022-22620540<br />
-            <strong>Email:</strong> info-mumbai@mrsac.gov.in
+            <strong><i class="bi bi-telephone-fill me-2"></i>Tel:</strong> 022-22620540<br />
+            <strong><i class="bi bi-envelope-fill me-2"></i>Email:</strong> info-mumbai@mrsac.gov.in
           </p>
         </div>
       </div>
       <div class="col-md-4">
         <div class="contact-box">
-          <h3>📍 Pune Branch</h3>
+          <h3><i class="bi bi-geo-alt-fill me-2"></i>Pune Branch</h3>
           <p>
             4th Floor, New Administrative Building,<br />
             D-Wing, Opp. Council Hall, Camp, Pune – 411 001
           </p>
           <p>
-            <strong>Tel:</strong> 020-26136132 / 26136133<br />
-            <strong>Email:</strong> info-pune@mrsac.gov.in
+            <strong><i class="bi bi-telephone-fill me-2"></i>Tel:</strong> 020-26136132 / 26136133<br />
+            <strong><i class="bi bi-envelope-fill me-2"></i>Email:</strong> info-pune@mrsac.gov.in
           </p>
         </div>
       </div>
@@ -106,12 +101,17 @@
   <footer>
     <div class="footer-content">
       <div class="footer-item">
-        <h6>Contact Us</h6>
-        <p>MRSAC, VNIT Campus, Nagpur</p>
-        <p>+91-712-222-5256</p>
+        <h6><i class="bi bi-envelope-at me-2"></i>Contact Us</h6>
+        <p><i class="bi bi-geo-alt-fill me-2"></i>MRSAC, VNIT Campus, Nagpur</p>
+        <p><i class="bi bi-telephone-fill me-2"></i>+91-712-222-5256</p>
       </div>
       <div class="footer-item">
-        &copy; 2025 Automated Farm Boundary Detection. All rights reserved.
+        <p>&copy; 2025 Automated Farm Boundary Detection. All rights reserved.</p>
+      </div>
+      <div class="footer-item">
+        <h6><i class="bi bi-link-45deg me-2"></i>Quick Links</h6>
+        <p><a href="home.html" class="text-decoration-none" style="color: var(--text-muted);"><i class="bi bi-search me-2"></i>Detection</a></p>
+        <p><a href="history.html" class="text-decoration-none" style="color: var(--text-muted);"><i class="bi bi-clock-history me-2"></i>History</a></p>
       </div>
     </div>
   </footer>
