@@ -6,12 +6,17 @@ import numpy as np
 import base64
 import tempfile
 import os
+import webbrowser
+from threading import Timer
 from dotenv import load_dotenv
 
 # Load environment variables from .env file
 load_dotenv()
 
-app = Flask(__name__)
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+FRONTEND_DIR = os.path.abspath(os.path.join(BASE_DIR, "..", "frontend"))
+
+app = Flask(__name__, static_folder=FRONTEND_DIR, static_url_path="")
 
 CORS(app, resources={r"/predict": {"origins": "*"}})
 
@@ -24,6 +29,11 @@ if not api_key:
 
 rf = Roboflow(api_key=api_key)
 model = rf.workspace().project("farmboundary").version(1).model
+
+
+@app.route("/")
+def index():
+    return app.send_static_file("index.html")
 
 
 def base64_to_image(base64_str):
@@ -96,5 +106,11 @@ def predict():
         os.remove(temp_file_path)
 
 
+def open_browser():
+    webbrowser.open_new("http://127.0.0.1:5000/")
+
+
 if __name__ == "__main__":
+    if os.environ.get("WERKZEUG_RUN_MAIN") == "true":
+        Timer(1, open_browser).start()
     app.run(debug=True)
