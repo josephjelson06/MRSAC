@@ -11,13 +11,13 @@ __pycache__/
 runs/
 
 # Models
-Models
+# Models
 
 # Model weights (large files - track with Git LFS if needed)
-*.pt
-*.h5
-*.pth
-*.onnx
+# *.pt
+# *.h5
+# *.pth
+# *.onnx
 
 # Environment variables
 .env
